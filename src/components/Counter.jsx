@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function COunter() {
+export default function Counter() {
   const [count, setCount] = useState(0);
 
   console.log("app is rendered")
