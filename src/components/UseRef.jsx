@@ -1,16 +1,18 @@
-import { useEffect,useRef } from 'react'
+import { useEffect,useRef, useState } from 'react'
 
 function UseRef() {
+
+    const [incomeTax,setIncomeTax] = useState(2000)
 
     const divRef = useRef()
 
     useEffect(()=>{
         setTimeout(()=>{
-            divRef.current.innerHtml = "10"
+            console.log(divRef.current)
+            divRef.current.innerHTML = 10;
         },5000)
     },[])
 
-    let incomeTax = 3000;
 
   return (
     <div>
